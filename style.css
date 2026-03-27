@@ -1,0 +1,274 @@
+
+.stApp {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- HEADINGS  --- */
+h1, h3, h4 {
+    color: #ffffff !important;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.9), -1px -1px 5px rgba(0,0,0,0.8) !important;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.hero-subtitle {
+    text-align: center;
+    color: #ffffff !important;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9) !important;
+}
+
+/* --- FIX INVISIBLE FILE UPLOADER LABELS --- */
+div[data-testid="stFileUploader"] label p {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 15px !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9) !important;
+    letter-spacing: 0.5px;
+}
+
+/* --- FILE UPLOADERS --- */
+[data-testid="stFileUploadDropzone"] {
+    border-radius: 16px !important;
+    border: 2px dashed #bdc3c7 !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 20px !important;
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+}
+
+[data-testid="stFileUploadDropzone"]:hover {
+    border-color: #00B4DB !important;
+    background-color: #f0fcfc !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 180, 219, 0.2) !important;
+}
+
+/* --- PRIMARY BUTTONS (Generate Timetable) --- */
+div.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #0083B0 0%, #00B4DB 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 24px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    width: 100%;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 131, 176, 0.4) !important;
+}
+
+div.stButton > button[kind="primary"]:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(0, 131, 176, 0.6) !important;
+}
+
+/* --- RESOURCE AUDIT METRIC CARDS --- */
+.metric-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #00B4DB;
+    transition: transform 0.2s ease-in-out;
+}
+
+.metric-box:hover {
+    transform: translateY(-3px);
+}
+
+.metric-box h2 {
+    margin: 10px 0 0 0;
+    font-size: 36px;
+    color: #2c3e50 !important; 
+    font-weight: 800 !important;
+    text-shadow: none !important; 
+}
+
+/* --- PREMIUM TABLE STYLING --- */
+table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px; 
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); 
+}
+
+th { 
+    background-color: #1a252f !important; 
+    color: white !important; 
+    padding: 16px 10px !important; 
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center !important; 
+    border-bottom: 3px solid #0f171e !important;
+}
+
+td { 
+    border-bottom: 1px solid #ecf0f1; 
+    border-right: 1px solid #f7f9fa;
+    text-align: center; 
+    padding: 12px; 
+    vertical-align: middle; 
+}
+
+td:last-child, th:last-child { border-right: none; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background-color: #fafbfc; }
+
+/* --- SIDEBAR UPGRADES --- */
+[data-testid="stSidebar"] {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-right: 1px solid #e2e8f0;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+}
+
+.streamlit-expanderHeader {
+    font-weight: 700 !important;
+    color: #2d3748 !important;
+    background-color: #f8f9fa !important;
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 10px !important;
+}
+
+/* --- TABS STYLING (Make Tabs Visible over Clock) --- */
+section[data-testid="stMain"] button[data-baseweb="tab"] p {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9), -1px -1px 5px rgba(0,0,0,0.8) !important;
+}
+
+section[data-testid="stMain"] button[data-baseweb="tab"][aria-selected="true"] p {
+    color: #00B4DB !important; /* Active tab glows cyan */
+}
+
+/* --- INPUT FIELDS BOXES --- */
+div[data-baseweb="input"] > div, 
+div[data-baseweb="select"] > div {
+    background-color: #f8f9fc !important; 
+    border: 1.5px solid #cbd5e1 !important; 
+    border-radius: 8px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+div[data-baseweb="input"] > div:focus-within,
+div[data-baseweb="select"] > div:focus-within {
+    border-color: #00B4DB !important;
+    box-shadow: 0 0 0 3px rgba(0, 180, 219, 0.2) !important;
+    background-color: #ffffff !important;
+}
+
+div[data-baseweb="input"] input,
+div[data-baseweb="select"] div {
+    color: #1e293b !important;
+    font-weight: 500 !important;
+}
+
+.stCheckbox > label > div[role="checkbox"] {
+    background-color: #f8f9fc !important;
+    border: 1.5px solid #cbd5e1 !important;
+}
+
+/* --- 🚨 SMART LABELS: MAIN AREA VS SIDEBAR 🚨 --- */
+
+section[data-testid="stMain"] .stTextInput label p, 
+section[data-testid="stMain"] .stNumberInput label p, 
+section[data-testid="stMain"] .stSelectbox label p, 
+section[data-testid="stMain"] .stTimeInput label p, 
+section[data-testid="stMain"] .stCheckbox label p, 
+section[data-testid="stMain"] .stToggle label p {
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9), -1px -1px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* 2. Sidebar Labels (Over the white background - Make them DARK) */
+section[data-testid="stSidebar"] .stTextInput label p, 
+section[data-testid="stSidebar"] .stNumberInput label p, 
+section[data-testid="stSidebar"] .stSelectbox label p, 
+section[data-testid="stSidebar"] .stTimeInput label p, 
+section[data-testid="stSidebar"] .stCheckbox label p, 
+section[data-testid="stSidebar"] .stToggle label p {
+    font-weight: 600 !important;
+    color: #475569 !important;
+    font-size: 14px !important;
+    margin-bottom: 4px !important;
+    text-shadow: none !important; 
+}
+
+/* --- ALERTS & INFO BOXES (FIXED FOR BACKGROUNDS) --- */
+[data-testid="stAlert"] {
+    background-color: rgba(255, 255, 255, 0.98) !important; 
+    border-radius: 10px !important;
+    border: 2px solid #e74c3c !important; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6) !important; 
+}
+
+[data-testid="stAlert"] p {
+    color: #000000 !important; 
+    font-weight: 700 !important;
+    text-shadow: none !important; 
+    font-size: 15px !important;
+}
+
+/* --- TEXT VISIBILITY FIX FOR EXPANDERS --- */
+[data-testid="stExpander"] {
+    background-color: rgba(255, 255, 255, 0.90) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+[data-testid="stExpanderDetails"] {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 0px 0px 10px 10px !important;
+    color: #000000 !important;
+}
+
+[data-testid="stExpanderDetails"] p, 
+[data-testid="stExpanderDetails"] li,
+[data-testid="stExpanderDetails"] b,
+[data-testid="stExpanderDetails"] strong,
+[data-testid="stExpanderDetails"] code {
+    color: #111111 !important;
+    font-weight: 500;
+    text-shadow: none !important; 
+}
+
+/* Custom IDM-Proof Download Button */
+.idm-download-btn {
+    display: block; 
+    width: fit-content; 
+    margin: 15px auto 0 auto; 
+    background-color: #0083B0; 
+    color: white !important; 
+    text-align: center; 
+    padding: 8px 20px; 
+    border-radius: 6px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 14px; 
+    box-shadow: 0 4px 6px rgba(0, 131, 176, 0.3); 
+    transition: all 0.3s ease;
+}
+
+.idm-download-btn:hover {
+    background-color: #00B4DB;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 180, 219, 0.4); 
+}
