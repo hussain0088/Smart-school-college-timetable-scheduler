@@ -183,7 +183,7 @@ div[data-baseweb="select"] div {
     border: 1.5px solid #cbd5e1 !important;
 }
 
-/* --- 🚨 SMART LABELS: MAIN AREA VS SIDEBAR 🚨 --- */
+/* ---  SMART LABELS: MAIN AREA VS SIDEBAR  --- */
 
 section[data-testid="stMain"] .stTextInput label p, 
 section[data-testid="stMain"] .stNumberInput label p, 
@@ -271,4 +271,26 @@ section[data-testid="stSidebar"] .stToggle label p {
     background-color: #00B4DB;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 180, 219, 0.4); 
+}
+
+.example-box {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #111111 !important;
+    border-left: 5px solid;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.example-blue { border-color: #3498db; }
+.example-yellow { border-color: #f1c40f; }
+.example-red { border-color: #e74c3c; }
+
+/* Failsafe to guarantee the expander background turns white */
+[data-testid="stExpander"] > div:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    padding: 15px !important;
+    border-radius: 0px 0px 10px 10px !important;
 }
