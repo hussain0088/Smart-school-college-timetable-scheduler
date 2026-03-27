@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 import base64
-from model.entities import Teacher, SchoolClass
-from model.timetable_logic import WeeklyTimetable
-from logic.scheduler import Scheduling 
+from entities import Teacher, SchoolClass
+from timetable_logic import WeeklyTimetable
+from scheduler import Scheduling 
 import dashboard as db
 
 # Page Configuration
